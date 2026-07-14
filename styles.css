@@ -1,0 +1,93 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #050a0f;
+    /* Linhas diagonais estilo "Scanner" */
+    background-image: 
+        linear-gradient(135deg, rgba(30, 60, 114, 0.1) 25%, transparent 25%, transparent 50%, rgba(30, 60, 114, 0.1) 50%, rgba(30, 60, 114, 0.1) 75%, transparent 75%, transparent),
+        radial-gradient(circle at 50% 50%, #0a1624, #050a0f);
+    background-size: 40px 40px, 100% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(91, 140, 255, 0.4);
+    box-shadow: 0 0 30px rgba(91, 140, 255, 0.2);
+    width: 100%;
+    max-width: 450px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.container:hover {
+    border-color: #5b8cff;
+    box-shadow: 0 0 50px rgba(91, 140, 255, 0.3);
+}
+
+h1 { text-align: center; font-weight: 200; letter-spacing: 4px; color: #fff; text-shadow: 0 0 10px #5b8cff; margin-bottom: 30px; }
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #1e3c72;
+    border-radius: 8px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #1e3c72;
+    border: 1px solid #5b8cff;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+button:hover { background: #2a5298; box-shadow: 0 0 20px #5b8cff; }
+
+ul { list-style: none; padding: 0; margin-top: 30px; }
+
+li {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 2px solid #5b8cff;
+}
+
+.btn-excluir {
+    background: transparent;
+    color: #ff5b5b;
+    border: 1px solid #ff5b5b;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.btn-excluir:hover { background: #ff5b5b; color: #fff; }
